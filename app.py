@@ -23,10 +23,10 @@ button = st.button('Predict')
 # After pressing submit button 
 if button:
     # Load preprocessor
-    with open('notebook/model.pkl', 'rb') as file1:
+    with open('Notebook/model.pkl', 'rb') as file1:
         model = pickle.load(file1)
     # Load the model
-    with open('notebook/pre.pkl', 'rb') as file2:
+    with open('Notebook/pre.pkl', 'rb') as file2:
         pre = pickle.load(file2)
     # Get the results in dataframe format
     dct = {'sepal_length':[sep_len],
